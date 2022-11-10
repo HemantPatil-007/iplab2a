@@ -1,0 +1,631 @@
+:root {
+  --body-font-family: "DM Sans", sans-serif;
+}
+
+* {
+  font-family: var(--body-font-family);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #86c7fd;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #86c7fd;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.topsection {
+  background-image: url("https://raw.githubusercontent.com/Abhip32/IP-LAB-1.1/main/Assets/wallpaperflare.com_wallpaper.jpg");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+}
+
+.topsection nav {
+  display: flex;
+  align-items: center;
+  margin-left: 10%;
+  color: white;
+}
+
+#Greet {
+  display: block;
+  margin-top: 10%;
+  font-size: 20px;
+  position: relative;
+  animation-name: Greetanimation;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes Greetanimation {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  100% {
+    left: 10%;
+    top: 0px;
+  }
+}
+
+#Greet #HelloMessage > img {
+  width: 110px;
+  height: 100px;
+  border-radius: 300px;
+  box-shadow: 3px 3px 20px white;
+}
+.topsection #Greet #HelloMessage {
+  display: flex;
+  gap: 2%;
+}
+
+.topsection #Greet #HelloMessage .HelloMessage1,
+.HelloMessage2 {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 30px;
+  font-weight: 900;
+  display: flex;
+  width: fit-content;
+  background-color: white;
+}
+
+.topsection #Greet .HelloMessage2 {
+  color: royalblue;
+}
+
+nav .menu-title {
+  margin-right: 5%;
+}
+
+body {
+  background-color: white;
+}
+
+menu {
+  background-color: transparent;
+  padding: 15px;
+}
+
+menuitem a {
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+  margin-right: 20px;
+}
+
+menuitem a:hover {
+  color: #86c7fd;
+  border-bottom: 2px solid #86c7fd;
+}
+
+#BasicInfo {
+  margin-left: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 2%;
+  color: black;
+  border-radius: 1%;
+}
+
+.BasicInfo:hover {
+  transform: scale(1.2);
+  box-shadow: 5px 10px 18px black;
+}
+
+#BasicInfo .Info {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  animation-name: aboutanimation;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes aboutanimation {
+  0% {
+    left: -5%;
+    top: 0px;
+  }
+  100% {
+    left: 5%;
+    top: 0px;
+  }
+}
+
+#BasicInfo .InfoL {
+  padding: 5%;
+  width: 30vw;
+  background-color: white;
+  border-radius: 3%;
+}
+
+#BasicInfo .InfoM > span img {
+  border-radius: 3vw;
+  width: 6vw;
+  height: 5vw;
+  box-shadow: 3px 3px 20px white;
+}
+
+div.InfoM {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+  color: white;
+  border-radius: 3%;
+  margin: 0.5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 30%;
+  margin-left: 3vw;
+  background-color: #1489b7;
+  width: 28vw;
+}
+
+#BasicInfo .InfoMR {
+  border-radius: 3%;
+  margin-left: 3vw;
+  padding: 5%;
+  color: #717275;
+  background-color: white;
+  width: 33vw;
+}
+
+#BasicInfo .InfoMR p > strong {
+  color: black;
+}
+
+.AboutMe:hover {
+  transform: scale(1.2);
+  box-shadow: 5px 10px 18px black;
+}
+
+.BasicInfo .Logo {
+  border-radius: 150px;
+  border: none;
+  box-shadow: 3px 5px 20px orangered;
+}
+
+#Skills {
+  gap: 10%;
+  color: black;
+  border-radius: 3%;
+  margin: 0.5%;
+  padding: 3%;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  background-color: #f9f9f9;
+  width: 100%;
+}
+
+#Skills img {
+  width: 100px;
+  height: 100px;
+  padding: 15px;
+}
+
+.WorkExperience {
+  padding-left: 18%;
+  padding-right: 18%;
+  padding-top: 5%;
+}
+
+.WorkExperience .WorkExperienceheader {
+  background-image: linear-gradient(180deg, #1489b7, royalblue);
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 3%;
+  border-radius: 20px;
+  gap: 2%;
+}
+
+.WorkExperience .WorkExperiencecontent {
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  color: black;
+  display: flex;
+  align-items: center;
+  padding: 2%;
+  border-radius: 20px;
+  gap: 2%;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 41%;
+}
+
+.container :hover {
+  transform: scale(1.1);
+}
+
+.container :hover > h2 {
+  color: #1489b7;
+}
+.container::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #ff9f55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.right::after {
+  left: -16px;
+}
+
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 600px) {
+  .timeline::after {
+    left: 31px;
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  .left::after,
+  .right::after {
+    left: 15px;
+  }
+
+  .right {
+    left: 0%;
+  }
+}
+
+.WorkExperience .WorkExperienceheader img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+}
+
+.FavouriteQuote {
+  padding-left: 10%;
+  padding-right: 30%;
+  padding-top: 5%;
+}
+
+.FavouriteQuote .FavouriteQuoteheader {
+  background-image: linear-gradient(180deg, #1489b7, royalblue);
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 3%;
+  border-radius: 20px;
+  gap: 2%;
+}
+
+.FavouriteQuote .FavouriteQuoteContent {
+  margin-top: 20px;
+  height: 740px;
+  background-color: #f9f9f9;
+  color: black;
+  align-items: center;
+  padding: 2%;
+  border-radius: 20px;
+  gap: 2%;
+}
+
+.FavouriteQuote .FavouriteQuoteheader img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+}
+
+.FavouriteQuote .FavouriteQuoteContent .QuoteCard1,
+.QuoteCard2,
+.QuoteCard3 {
+  width: 700px;
+  height: 30vh;
+  display: flex;
+  float: left;
+  background-color: #1489b7;
+  margin: 10px;
+  border-radius: 1%;
+  font-size: 100%;
+}
+
+.FavouriteQuote .FavouriteQuoteContent .QuoteCard2 {
+  float: right;
+}
+
+.FavouriteQuote .FavouriteQuoteContent .QuoteCard3 {
+  width: 45vw;
+  height: 30vh;
+  float: left;
+}
+
+.Multimedia {
+  padding-left: 30%;
+  padding-right: 10%;
+  padding-top: 5%;
+}
+
+.Multimedia .Multimediaheader {
+  background-image: linear-gradient(180deg, #1489b7, royalblue);
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 3%;
+  border-radius: 20px;
+  gap: 2%;
+}
+
+.Multimedia .MultimediaContent {
+  margin-top: 20px;
+  height: 940px;
+  background-color: #f9f9f9;
+  color: black;
+  padding: 2%;
+  border-radius: 20px;
+  gap: 2%;
+}
+
+.Multimedia .Multimediaheader img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+}
+
+.Multimedia .MultimediaContent .AudioCard {
+  width: 50%;
+  height: max-content;
+  color: white;
+  background-color: #1489b7;
+  margin: 10px;
+  border-radius: 1%;
+  font-size: 100%;
+  padding-top: 1%;
+  padding-bottom: 3%;
+  padding-left: 5%;
+  padding-right: 5%;
+  float: left;
+}
+
+.Multimedia .MultimediaContent .VideoCard {
+  width: 50%;
+  height: max-content;
+  color: white;
+  background-color: #1489b7;
+  margin: 10px;
+  border-radius: 1%;
+  font-size: 100%;
+  padding-top: 1%;
+  padding-bottom: 3%;
+  padding-left: 5%;
+  padding-right: 5%;
+  float: right;
+}
+
+.Multimedia .MultimediaContent .FigureCard {
+  width: 50%;
+  height: max-content;
+  color: white;
+  background-color: #1489b7;
+  margin: 10px;
+  border-radius: 1%;
+  font-size: 100%;
+  padding-top: 1%;
+  padding-bottom: 3%;
+  padding-left: 5%;
+  padding-right: 5%;
+  float: left;
+}
+
+footer {
+  margin-left: 5%;
+}
+
+footer .Footerheader {
+  background-color: #1489b7;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 1%;
+  width: 88%;
+  border-radius: 20px;
+  gap: 2%;
+}
+
+footer .FooterContent {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+footer .Footerheader img {
+  width: 130px;
+  height: 130px;
+  border-radius: 100px;
+}
+
+footer .FooterLeft {
+  margin-top: 20px;
+  padding: 2%;
+  width: 38%;
+  margin-right: 3%;
+  background-color: #f9f9f9;
+}
+
+footer .FooterRight {
+  margin-top: 20px;
+  padding: 2%;
+  width: 40%;
+  height: 50%;
+  margin-right: 3%;
+  background-color: #f9f9f9;
+}
+
+input {
+  padding: 10px;
+  width: 50%;
+  margin: 10px;
+}
+
+input[type="text"]:focus {
+  background-color: #003257;
+  color: #1489b7;
+}
+
+input[type="email"]:focus {
+  background-color: #003257;
+  color: #1489b7;
+}
+
+textarea {
+  padding: 10px;
+  width: 70%;
+  height: 20%;
+}
+
+textarea:focus {
+  background-color: #003257;
+  color: #1489b7;
+}
+
+button {
+  padding: 2%;
+  margin: 2%;
+  background-color: #1489b7;
+  color: white;
+  border-radius: 20px;
+  width: 100px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+.fa-instagram {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  color: white;
+}
+.fa-linkedin {
+  background: #003257;
+  color: white;
+}
